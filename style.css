@@ -1,0 +1,108 @@
+:root {
+  --accent-shadow: hsl(0, 0%, 7%);
+  --bgc-primary: hsl(47, 88%, 63%);
+  --bgc-card: hsl(0, 0%, 100%);
+  --clr-text: hsl(0, 0%, 50%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin-block-end: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: var(--bgc-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.card {
+  max-width: 20em;
+  background-color: var(--bgc-card);
+  box-shadow: 10px 10px var(--accent-shadow);
+  border-radius: 16px;
+  margin: 3em auto;
+  padding: 1em;
+}
+
+.card__img {
+  border-radius: 16px;
+}
+
+.content__category {
+  display: inline-block;
+  background-color: var(--bgc-primary);
+  border-radius: 5px;
+  padding: 0.25em 1em;
+  font-weight: 800;
+}
+
+.content__title {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.content__title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content__title a:hover,
+.content__title a:focus {
+  color: var(--bgc-primary);
+}
+
+.content__text {
+  color: var(--clr-text);
+}
+
+.content__profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.profile__img {
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+
+.profile__name {
+  font-weight: 800;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 3em 1em 0.5em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--clr-text);
+}
